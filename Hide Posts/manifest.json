@@ -1,0 +1,13 @@
+{
+    "name": "Hide Posts",
+    "version": "0.1.0",
+    "description": "Hide posts that you don't want in your Facebook feed, be it politics or Salman Khan.",
+    "content_scripts": [{
+        "matches": ["*://*.facebook.com/*"],
+        "css": ["HidePost.css"],
+        "js": ["jquery-1.9.0.min.js", "HidePost.js"]
+    }],
+    "options_page": "Keywords.html",
+    "permissions": ["storage"],
+    "manifest_version": 2
+}
