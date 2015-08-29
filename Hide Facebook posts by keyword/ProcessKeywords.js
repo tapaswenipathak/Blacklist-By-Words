@@ -27,9 +27,9 @@ function restore() {
 //Insert sample words
 function getSampleblock_keywords() {
     var sampleblock_keywords = [
-       "BJP",
-       "You will not believe what happened next",
-       "Salman Khan"
+       "Replace",
+       "these",
+       "keywords"
     ];
     return sampleblock_keywords.join(", ");
 }
