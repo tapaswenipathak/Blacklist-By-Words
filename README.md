@@ -1,4 +1,4 @@
-# Hide-Facebook-Posts-Having
+# FB-Hide
 Chrome extension to hide facebook posts containing specific keywords.
 
 
@@ -12,5 +12,5 @@ Chrome extension to hide facebook posts containing specific keywords.
 
 ###How do I add keywords?
 
-1. Go to chrome://extensions and click on options under this extensions.
+1. Go to chrome://extensions and click on options under this extension.
 2. Input keywords and click save.
