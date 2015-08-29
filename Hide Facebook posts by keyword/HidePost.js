@@ -1,5 +1,5 @@
 // Don't trigger hideForMe(), manipulate the dom in hideForMe() :D
-var lock = false; 
+var lock = false;
 
 var facebookStoryClass = ".userContentWrapper";
 var hideForMe = function(regex) {
@@ -56,11 +56,7 @@ function makeRegex(block_keywords) {
 
 chrome.storage.sync.get("HidePost_block_keywords", function(response) {
     var block_keywords = response["HidePost_block_keywords"];
-    if (!block_keywords) {
-        if (window.confirm("Nothing I can do until you tell me what to hide. :(")) {
-            window.open(chrome.extension.getURL("Keywords.html"));
-        }
-    } else {
+    if (block_keywords) {
         var regex = makeRegex(block_keywords);
         document.addEventListener("DOMNodeInserted", function() {
             // Slow, damn slow!
