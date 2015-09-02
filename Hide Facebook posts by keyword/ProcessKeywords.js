@@ -2,11 +2,11 @@
 
 function save() {
     var block_keywords = document.getElementById("block_keywords").value;
-    current_status.innerHTML = "Saving...";
+    current_status.innerHTML = "  Saving...";
     chrome.storage.sync.set({"HidePost_block_keywords": block_keywords}, function() {
 
         var current_status = document.getElementById("current_status");
-        current_status.innerHTML = "Saved. :)";
+        current_status.innerHTML = "  Saved";
         setTimeout(function() {
             current_status.innerHTML = "";
         }, 750);
@@ -27,14 +27,14 @@ function restore() {
 //Insert sample words
 function getSampleblock_keywords() {
     var sampleblock_keywords = [
-       "BJP",
-       "You will not believe what happened next",
-       "Salman Khan" 
+       "Replace",
+       "these",
+       "keywords"
     ];
-    return sampleblock_keywords.join(", ");    
+    return sampleblock_keywords.join(", ");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    restore();    
+    restore();
     document.getElementById("save").addEventListener('click', save);
 });
