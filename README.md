@@ -1,16 +1,21 @@
-# FB-Hide
-Chrome extension to hide facebook posts containing specific keywords.
+# BlackList By Words
+Chrome extension to hide Facebook posts containing specific keywords.
 
 
-###How do I install?
+###How to use?
 
-1. Download it from [here](https://github.com/mattdean1/FB-Hide/tree/master/Hide%20Facebook%20posts%20by%20keyword?raw=true) and extract/unzip it to a sensible location.
-2. Type `chrome://extensions` in the url bar, or go to `Tools -> Extensions` in the options menu.
-3. Check `Developer Mode` is ticked.
-4. Click `Load unpacked extension`, then find and open the folder downloaded in step 1.
+Follow below steps to use it :
+
+1. Download it from [here](https://github.com/tapasweni-pathak/Hide-Facebook-Posts-Having/blob/master/dist/Hide%20Posts.zip?raw=true) and extract/unzip it.
+2. Either go to chrome://extensions or go to Tools -> Extensions.
+3. Check Developer Mode is ticked.
+4. Click on Load unpacked extension, go to the location where you downloaded it in step 1.
+
+You are done. :smiley:
 
 
-###How do I add keywords?
+###How to add keywords?
 
-1. Click the button in the top right
-2. Input keywords and click save.
+1. Either go to chrome://extensions and click on options under this extensions or click on icon.
+2. Write the words and click on save.
+3. Done.
