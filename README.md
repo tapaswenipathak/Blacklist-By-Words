@@ -19,3 +19,6 @@ You are done. :smiley:
 1. Either go to chrome://extensions and click on options under this extensions or click on icon.
 2. Write the words and click on save.
 3. Done.
+
+
+inspiration : [yask123's small & awesome script](https://github.com/yask123/Hide-SalmanKhan-Related-FB-Feeds)
