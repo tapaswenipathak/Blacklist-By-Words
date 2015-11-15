@@ -17,22 +17,14 @@ function restore() {
     chrome.storage.sync.get("HidePost_block_keywords", function(response) {
         var block_keywords = response["HidePost_block_keywords"];
         if (!block_keywords) {
-            block_keywords = getSampleblock_keywords();
+            block_keywords = "";
         }
         document.getElementById("block_keywords").value = block_keywords;
     });
 }
 
 
-//Insert sample words
-function getSampleblock_keywords() {
-    var sampleblock_keywords = [
-       "Replace",
-       "these",
-       "keywords"
-    ];
-    return sampleblock_keywords.join(", ");
-}
+
 
 document.addEventListener("DOMContentLoaded", function() {
     restore();
