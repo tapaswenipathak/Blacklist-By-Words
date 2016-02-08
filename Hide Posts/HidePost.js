@@ -3,7 +3,7 @@ var lock = false;
 var block_keywords;
 var regex;
 
-var facebookStoryClass = ".userContentWrapper";
+//var facebookStoryClass = ".userContentWrapper";
 // var hideForMe = function(regex) {
 //     if (lock) {
 //         return;
@@ -39,11 +39,11 @@ Heart of the app
 Function to loop through all the showing user feed container if pattern match hide it/replace it with content whatever you want.
 else do nothing
 */
-function hidePost(){
+function hidePost(regex){
   $('.userContentWrapper').each(function(){
      var matches = regex.exec($(this).find('p').eq(0).html()); //text regex on the pargraph content of post
      if (matches !== null) { //if matches
-      //  console.log('matchfound');
+       console.log('matchfound');
          var story = $(this);
          var matchingString = matches.join(", ");
          var div = $("<div></div>")
@@ -73,11 +73,11 @@ function makeRegex(block_keywords) {
 }
 
 $(document).ready(function(){
-    hidePost() // call only on ready funciton instead of DOMNodeInserted which makes it very very slow because it read all the dom elements
+    hidePost(regex) // call only on ready funciton instead of DOMNodeInserted which makes it very very slow because it read all the dom elements
 });
 
 $(window).scroll(function (event) {
-    hidePost() //so on scroll new user feed will be updated, we should read those as well to hide by keywords
+    hidePost(regex) //so on scroll new user feed will be updated, we should read those as well to hide by keywords
 });
 
 //Thanks, http://stackoverflow.com/a/14533446
