@@ -7,6 +7,6 @@ with open('Hide Posts/manifest.json') as data_file:
 
 pprint(data)
 release_version = data["version"]
-destination="release/Release "+release_version+".zip"       
+destination="Release/Release "+release_version+".zip"       
 
 shutil.make_archive(destination, "zip", "Hide Posts")
