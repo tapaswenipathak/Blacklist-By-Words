@@ -1,7 +1,11 @@
 /*
 * Credit : https://css-tricks.com/examples/StyledTextArea/;
 */
- body {
+::-webkit-input-placeholder {
+   color: #808080;
+}
+
+body {
   background-color:white;
   font-size: 90%;
   font-family: Tahoma, sans-serif;
